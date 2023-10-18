@@ -15,7 +15,7 @@ public class removeConsecutiveDuplicate {
 
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] != arr[i - 1]) {
-                brr.add(arr[i]);
+                brr.add(arr[i]); 
             } else {
                 continue;
             }

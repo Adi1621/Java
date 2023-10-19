@@ -11,6 +11,7 @@ public class lengthOfLongestString {
 
         int maxLen = 0;
         String ans = "";
+
         for (int i = 0; i < words.length; i++) {
             String sample = words[i];
             int len = sample.length();
@@ -20,6 +21,7 @@ public class lengthOfLongestString {
                 ans += sample;
             }
         }
+        
         System.out.println(maxLen);
         System.out.println(ans);
 

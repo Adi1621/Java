@@ -11,6 +11,7 @@ public class productiveCharPair {
 
         int i = 0;
         int j = i + 1;
+        
         while (i < str.length() && j < str.length()) {
             if (str.charAt(i) > str.charAt(j)) {
                 sb.append(str.charAt(i));

@@ -8,8 +8,10 @@ public class reverseString {
         
         String str = sc.nextLine();
         String[] a = str.split(" ");
+
         ArrayList<String> b = new ArrayList<>(Arrays.asList(a));
         Collections.reverse(b);
+        
         int i = 0;
         while (i < b.size()) {
             System.out.print(b.get(i));

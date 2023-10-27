@@ -18,7 +18,6 @@ public class basicRecursion {
         System.arraycopy(a, 0, c, 0, a1);
         System.arraycopy(b, 0, c, a1, b1);
         
-
         System.out.println(Arrays.toString(c));
     }
 }

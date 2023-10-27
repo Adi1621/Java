@@ -1,6 +1,7 @@
 public class stringBuilder {
     public static void main(String[] args) {
         StringBuilder str = new StringBuilder("Aditya ");
+        
         str.append("Kanswal");
         str.append(1411);
         str.setCharAt(0, 'a' );

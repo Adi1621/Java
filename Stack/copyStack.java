@@ -12,8 +12,7 @@ public class copyStack {
             int x = sc.nextInt();
             stack.push(x);
         
-
-        }
+         }
         System.out.println(stack);
 
         

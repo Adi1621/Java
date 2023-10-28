@@ -8,7 +8,6 @@ public class copyStack {
         Stack<Integer> stack = new Stack<>();
         int n;
         n=sc.nextInt();
-
         for(int i = 1;i<=n;i++){
             int x = sc.nextInt();
             stack.push(x);

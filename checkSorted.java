@@ -20,6 +20,7 @@ public class checkSorted {
             }
         }
         if (flag == arr.length - 1) {
+            
             System.out.println("Sorted");
         }
     }

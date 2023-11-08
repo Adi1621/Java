@@ -1,6 +1,6 @@
 package SearchingAlgorithms;
 
-// Java implementation of recursive Binary Search
+
 public class binarySearch {
 
 	

@@ -15,13 +15,11 @@ public class binarySearch {
 			if (arr[mid] == x)
 				return mid;
 
-			// If element is smaller than mid, then
-			// it can only be present in left subarray
+			
 			if (arr[mid] > x)
 				return binarySearch(arr, l, mid - 1, x);
 
-			// Else the element can only be present
-			// in right subarray
+			
 			return binarySearch(arr, mid + 1, r, x);
 		}
 

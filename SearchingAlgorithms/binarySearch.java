@@ -3,15 +3,13 @@ package SearchingAlgorithms;
 // Java implementation of recursive Binary Search
 public class binarySearch {
 
-	// Returns index of x if it is present in arr[l..
-	// r], else return -1
+	
 	int binarySearch(int arr[], int l, int r, int x)
 	{
 		if (r >= l) {
 			int mid = l + (r - l) / 2;
 
-			// If the element is present at the
-			// middle itself
+			
 			if (arr[mid] == x)
 				return mid;
 

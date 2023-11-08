@@ -25,12 +25,11 @@ public class binarySearch {
 			return binarySearch(arr, mid + 1, r, x);
 		}
 
-		// We reach here when element is not present
-		// in array
+		
 		return -1;
 	}
 
-	// Driver code
+	
 	public static void main(String args[])
 	{
 		binarySearch ob = new binarySearch();

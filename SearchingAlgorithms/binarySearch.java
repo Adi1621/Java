@@ -39,8 +39,9 @@ public class binarySearch {
 		else
 			System.out.println(
 
-			
 
+
+			
 
 				"Element is present at index " + result);
 	}

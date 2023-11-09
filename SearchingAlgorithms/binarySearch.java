@@ -38,6 +38,7 @@ public class binarySearch {
 				"Element is not present in array");
 		else
 			System.out.println(
+				
 				"Element is present at index " + result);
 	}
 }

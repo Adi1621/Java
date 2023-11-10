@@ -10,7 +10,7 @@ public class binarySearch {
 		int mid = start + end / 2;
 		while(start>end){
 			if(target==mid){
-				System.out.println(z);
+				System.out.println();
 			}
 
 		}

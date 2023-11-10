@@ -2,43 +2,21 @@ package SearchingAlgorithms;
 
 
 public class binarySearch {
+	public static void main(String[] args) {
+		int arr[] = {1,3,4,5,6,7,8,9,10,11,13,15,16};
+		int target = 9;
+		int start =0;
+		int end=arr.length-1;
+		int mid = start + end / 2;
+		while(start>end){
+			if(target==mid){
+				System.out.println();
+			}
 
-	
-	int binarySearch(int arr[], int l, int r, int x)
-	{
-		if (r >= l) {
-			int mid = l + (r - l) / 2;
-
-			
-			if (arr[mid] == x)
-				return mid;
-
-			
-			if (arr[mid] > x)
-				return binarySearch(arr, l, mid - 1, x);
-
-			
-			return binarySearch(arr, mid + 1, r, x);
 		}
-
-		
-		return -1;
 	}
 
 	
-	public static void main(String args[])
-	{
-		binarySearch ob = new binarySearch();
-		int arr[] = { 2, 3, 4, 10, 40 };
-		int n = arr.length;
-		int x = 10;
-		int result = ob.binarySearch(arr, 0, n - 1, x);
-		if (result == -1)
-			System.out.println(
-				"Element is not present in array");
-		else
-			System.out.println(
-				"Element is present at index " + result);
-	}
+	
 }
 

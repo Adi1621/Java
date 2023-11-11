@@ -35,9 +35,6 @@ public class binarySearch {
 		int result = ob.binarySearch(arr, 0, n - 1, x);
 		if (result == -1)
 			System.out.println(
-				
-
-
 				"Element is not present in array");
 		else
 			System.out.println(

@@ -37,6 +37,7 @@ public class binarySearch {
 			System.out.println(
 				
 
+
 			
 				"Element is not present in array");
 		else

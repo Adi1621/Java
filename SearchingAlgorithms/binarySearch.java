@@ -1,45 +1,39 @@
 package SearchingAlgorithms;
 
+import java.util.*;
 
 public class binarySearch {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 
-	
-	int binarySearch(int arr[], int l, int r, int x)
-	{
-		if (r >= l) {
-			int mid = l + (r - l) / 2;
+		int n = sc.nextInt();
 
-			
-			if (arr[mid] == x)
-				return mid;
+		int arr[] = new int[n];
 
-			
-			if (arr[mid] > x)
-				return binarySearch(arr, l, mid - 1, x);
-
-			
-			return binarySearch(arr, mid + 1, r, x);
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = sc.nextInt();
 		}
 
-		
-		return -1;
+		int target = sc.nextInt();
+
+		int start = 0;
+		int end = arr.length - 1;
+		int ans = -1;
+
+		for (int i = 0; i <= arr.length; i++) {
+			int mid = (start + end) / 2;
+
+			if (arr[mid] == target) {
+				ans = mid;
+			} else if (arr[mid] < target) {
+				start = mid + 1;
+			} else {
+				end = mid - 1;
+			}
+		}
+
+		System.out.println(ans);
+
 	}
 
-	
-	public static void main(String args[])
-	{
-		binarySearch ob = new binarySearch();
-		int arr[] = { 2, 3, 4, 10, 40 };
-		int n = arr.length;
-		int x = 10;
-		int result = ob.binarySearch(arr, 0, n - 1, x);
-		if (result == -1)
-			System.out.println(
-				"Element is not present in array");
-		else
-			System.out.println(
-				
-				"Element is present at index " + result);
-	}
 }
-

@@ -1,7 +1,10 @@
+import java.util.*;
+
 public class findGCD {
     public static void main(String[] args) {
-        int n = 10;
-        int m = 20;
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
         int rem = 0;
 
         while (n % m != 0) {

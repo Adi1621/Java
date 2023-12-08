@@ -5,15 +5,14 @@ public class findGCD {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
-        int rem = 0;
 
         while (n % m != 0) {
-            rem = n % m;
-            m = rem;
+            int rem = n % m;
             n = m;
+            m = rem;
         }
 
-        System.out.println(rem);
+        System.out.println(m);
     }
 
 }

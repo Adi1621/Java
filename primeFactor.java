@@ -8,8 +8,7 @@ public class primeFactor {
 
         for (int i = 2; i <= n; i++) {
             while (n % i == 0) {
-                n = n / i;
-                
+                n = n / i;     
                 ans.add(i);
 
             }

@@ -1,3 +1,4 @@
+//Binary search using recursion
 public class binarySearch {
     public static void main(String[] args) {
         int[] arr = { 1, 2, 4, 6, 7, 9, 11, 23 };

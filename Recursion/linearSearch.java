@@ -1,25 +1,26 @@
+import java.util.ArrayList;
+
 public class linearSearch {
     public static void main(String[] args) {
-        int[] arr = { 3, 5, 8, 0, 9, 77, 6 };
+        int[] arr = { 3, 6, 8, 6, 9, 77, 6 };
         int target = 6;
         int idx = 0;
+        ArrayList<Integer> list = new ArrayList<>();
 
-        System.out.println(search(arr, idx, target));
+        System.out.println(search(arr, idx, target, list));
     }
 
-    static int search(int[] arr, int idx, int target) {
+    static ArrayList search(int[] arr, int idx, int target, ArrayList<Integer> list) {
         if (arr[idx] == target) {
-            return idx;
+            list.add(idx);
         }
         if (idx == arr.length - 1) {
-            return -1;
+            return list;
         }
 
-        if (arr[idx] != target) {
-            return search(arr, idx + 1, target);
-        }
+        search(arr, idx + 1, target, list);
 
-        return -1;
+        return list;
 
     }
 }

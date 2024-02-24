@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class linearSearch {
     public static void main(String[] args) {
         int[] arr = { 3, 6, 8, 6, 9, 77, 6 };
-        int target = 6;
+        int target = 98;
         int idx = 0;
         ArrayList<Integer> list = new ArrayList<>();
 
